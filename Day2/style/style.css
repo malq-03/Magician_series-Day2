@@ -1,0 +1,71 @@
+body {
+  background: #eaeaea;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 80px;
+}
+
+.content-left {
+  width: 450px;
+}
+.content-left .title {
+  font-size: 48px;
+}
+.content-left .title span {
+  color: sandybrown;
+}
+.content-left .title p {
+  width: 450px;
+}
+.content-left .order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 9px;
+  padding: 12px 24px;
+  border-radius: 40px;
+}
+.content-left .order-button .icon {
+  background: sandybrown;
+  padding: 4px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-right .hero-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: brown;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.content-right .hero-img-container img {
+  width: 300px;
+  height: auto;
+}
+.content-right .hero-img-container .glassy-card {
+  width: -moz-max-content;
+  width: max-content;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  padding: 4px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.content-right .hero-img-container .glassy-card .glassy-border {
+  background: #eaeaea;
+  padding: 4px 24px;
+  border-radius: 40px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,83 @@
+$myColor: sandybrown;
+$secondColor: brown;
+$baseSize: 4px;
+
+@mixin flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background: #eaeaea;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 80px;
+}
+
+.content-left{
+  width: 450px;
+  .title{
+    font-size: 48px;
+    span{
+      color: $myColor;
+      
+    }
+    p{
+    width: 450px;
+    }
+  }
+  .order-button{
+    @include flex-box();
+    font-size: 18px;
+    gap: 9px;
+    padding: ($baseSize * 3) ($baseSize * 6);
+    border-radius: ($baseSize * 10);
+
+
+    .icon{
+      background: $myColor;
+      padding: $baseSize;
+      border-radius: 100%;
+      width: 24px;
+      height: 24px;
+      @include flex-box();
+    }
+  }
+}
+
+.content-right{
+  .hero-img-container{
+    @include flex-box();
+    background: $secondColor;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+    img {
+      width: 300px;
+      height: auto;      
+    }
+    .glassy-card{
+      width: max-content;
+      background: rgba($color: #fff, $alpha: 0.5);
+      border-radius: ($baseSize*10);
+      padding: $baseSize;
+      
+      position: absolute;
+      top: ($baseSize*5);
+      left: 0;
+      
+      .glassy-border{
+        background: #eaeaea;
+        padding: $baseSize ($baseSize*6);
+        border-radius: ($baseSize*10);
+      }
+    }
+  }
+}
+
